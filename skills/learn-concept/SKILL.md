@@ -13,6 +13,10 @@ description: "Teach a new concept from first principles: check the learner's lev
 
 - Never teach what the user already knows. Skip any building block they showed they know in the level check.
 - Ask setup questions together in one turn, never one at a time. If the user's request already answers a setup question, don't ask it.
+- **Answers come back with the questions.** Ask every question you need answered (setup, level check, block checks, milestone and final tests, branch checks) through the multiple-choice question tool, so the user answers inside the question card. Never post questions as plain text and wait for a separate typed reply. Fall back to plain text only if no question tool exists.
+  - The tool allows 2–4 options per question and up to 4 questions per call. For more questions, make a second call straight after. The user can always type their own answer through "Other".
+  - For "explain" or "why" questions, give 2–4 candidate answers (one right, the rest real misconceptions) and invite them to write their own through "Other".
+  - Each question must stand on its own (name the concept, give any numbers it needs), because the card may hide the text above it. Make sure any teaching content is already visible before the card opens. If text written before a tool call isn't shown in your environment, send it as a message first.
 - One idea per block. Explanations stay short (roughly 100–250 words), followed by a check.
 - Use an example or analogy only when it gets to understanding faster. One good one beats three.
 - A check during teaching is 1 question. A milestone test is 3–6 questions.
@@ -44,7 +48,7 @@ Also list **outside prerequisites**: concepts from other topics that a block dep
 
 Show the map as a compact numbered list grouped by milestone. Don't explain the blocks yet.
 
-**Level check:** in the same message, ask 3–5 diagnostic questions aimed at the blocks around the level the user picked. Use reasoning questions ("what happens if…", "why…"), not definitions. Include 1 question per outside prerequisite, inside the same round. Skip the topic questions if the user picked the lowest level, but still check the outside prerequisites.
+**Level check:** right after the map, ask 3–4 diagnostic questions in one question-tool call, aimed at the blocks around the level the user picked. Use reasoning questions ("what happens if…", "why…"), not definitions. Include 1 question per outside prerequisite. If that takes the total past 4, make a second call straight after; it's still one round. Skip the topic questions if the user picked the lowest level, but still check the outside prerequisites.
 
 Mark each block as known, shaky or unknown. Tell the user in one line which blocks you're skipping, then start at the first shaky or unknown block. Use one round of diagnostic questions only.
 
@@ -100,7 +104,7 @@ Use 3–6 questions across these levels. Recall can be at most 1 question.
 
 From the second milestone on, include 1–2 questions from earlier milestones (spaced recall).
 
-Wrong options in multiple-choice questions should be the real common misconceptions. Use a quiz widget for multiple-choice questions when one is available. Answer open-ended questions in chat.
+Wrong options should be the real common misconceptions. Ask through the question tool, because you need the answers back to grade them. Don't use quiz widgets that grade on the user's side: you never see the result.
 
 **Pass:** at least 80% and no misconception left on a core block. **Fail:** fix only the failed blocks (step 4), then retest only those. Report the result in 1–2 lines (score and weak spots) and move on.
 
